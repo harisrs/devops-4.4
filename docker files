@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Define the image name and tag
+IMAGE_NAME="myapache"
+TAG="latest"
+
+# Pull the Docker image
+docker pull $myapache:$TAG
+
+# Run the Docker container
+docker run -d $myapache:$TAG
